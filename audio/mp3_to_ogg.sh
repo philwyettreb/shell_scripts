@@ -30,7 +30,7 @@ fi
 #
 # Delete 'mp3' files once converted.
 #
-if stat -t *.mp3 >/dev/null 2>&1 ; then
+if stat -t ./*.mp3 >/dev/null 2>&1 ; then
     for filename in *.mp3
     do
         filename=${filename%.mp3}
@@ -44,7 +44,7 @@ fi
 #
 # Delete 'wav' files once converted.
 #
-if stat -t *.wav >/dev/null 2>&1 ; then
+if stat -t ./*.wav >/dev/null 2>&1 ; then
     for filename in *.wav
     do
         # Default quality is 5. Change below to preferred '1 - 10'.
